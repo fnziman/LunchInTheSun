@@ -26,7 +26,7 @@ class ApplicationController < ActionController::Base
     @current_user = nil
   end
 
-  def reqire_logged_in
+  def require_logged_in
     unless current_user
       #render error
     end
