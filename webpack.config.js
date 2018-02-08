@@ -24,7 +24,8 @@ plugins = plugins.concat(
 module.exports = {
   entry: './frontend/index.jsx',
   output: {
-    filename: './app/assets/javascripts/bundle.js',
+    path: path.resolve(__dirname, 'app', 'assets', 'javascripts'),
+    filename: "bundle.js"
   },
   plugins: plugins,
   module: {
@@ -34,7 +35,7 @@ module.exports = {
         exclude: /node_modules/,
         loader: 'babel-loader',
         query: {
-          presets: ['es2015', 'react']
+          presets: ['env', 'react']
         }
       }
     ]
