@@ -13,6 +13,7 @@ const loggedOut = () => {
   return (
     <div className="logged-out">
       <Link to='/login'>login</Link>
+      <br/>
       <Link to='/signup'>sign up</Link>
     </div>
   );
